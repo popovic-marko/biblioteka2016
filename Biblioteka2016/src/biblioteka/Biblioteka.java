@@ -39,8 +39,7 @@ public class Biblioteka implements BibliotekaInterfejs {
 			throw new RuntimeException("Naslov  ne sme biti null");
 		}
 		
-=======
->>>>>>> 52841d9 "Uvedena logicka kontrola u metodu pronadji knjigu"
+
 		LinkedList<Knjiga> rezultat = new LinkedList<Knjiga>();
 		
 		for (int i = 0; i < knjige.size(); i++) {
