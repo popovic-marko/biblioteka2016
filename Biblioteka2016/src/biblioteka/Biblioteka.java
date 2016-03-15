@@ -8,11 +8,12 @@ import biblioteka.interfejs.BibliotekaInterfejs;
 
 public class Biblioteka implements BibliotekaInterfejs {
 	
-	//Komentar
+	//Lista knjiga u biblioteci
 	private LinkedList<Knjiga> knjige = new LinkedList<Knjiga>();
 	
 	@Override
 	public void dodajKnjigu(Knjiga knjiga) {
+		//ne sme biti duplikata knjiga
 		if(knjiga == null || knjige.contains(knjiga)){
 			throw new RuntimeException("Greska pri unosu knjige");
 		}
